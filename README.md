@@ -1,2 +1,3 @@
 # Advanced-Programming-Language
-This Repo consists of all the work that is created as part of course Advanced Programming Language by Enose Katti
+
+This repository consists of all the work created as part of the course **Advanced Programming Language** by **Enose Katti**.
