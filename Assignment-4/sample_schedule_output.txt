@@ -1,0 +1,48 @@
+
+======================================================================
+                    FINAL EMPLOYEE SCHEDULE - WEEK
+======================================================================
+
+  MONDAY
+  ------------------------------------------------------------
+    Morning    : Frank, Carol
+    Afternoon  : Eve, Henry, Kate
+    Evening    : Grace, Bob
+
+  TUESDAY
+  ------------------------------------------------------------
+    Morning    : Alice, Henry, Jack
+    Afternoon  : David, Eve, Kate
+    Evening    : Carol, Grace
+
+  WEDNESDAY
+  ------------------------------------------------------------
+    Morning    : Bob, Ivy
+    Afternoon  : Alice, Eve, Frank, Jack
+    Evening    : Grace, David
+
+  THURSDAY
+  ------------------------------------------------------------
+    Morning    : Frank, Ivy
+    Afternoon  : Eve, Henry, Kate
+    Evening    : Alice, David, Grace, Jack
+
+  FRIDAY
+  ------------------------------------------------------------
+    Morning    : Alice, Ivy
+    Afternoon  : Kate, Henry
+    Evening    : Bob, Carol
+
+  SATURDAY
+  ------------------------------------------------------------
+    Morning    : Bob, David, Ivy
+    Afternoon  : Henry, Jack, Kate
+    Evening    : Carol, Frank
+
+  SUNDAY
+  ------------------------------------------------------------
+    Morning    : Ivy, Alice
+    Afternoon  : Bob, Frank
+    Evening    : Carol, David
+
+======================================================================
