@@ -23,6 +23,3 @@ go run . [workers] [tasks] [output-file]
 
 Defaults: 4 workers, 20 tasks, `../output/go_results.txt` (relative to the `go` directory).
 
-## Assignment report
-
-See `REPORT.md` for the APA-style write-up. Export it to PDF or Word, insert your GitHub repository URL, and append screenshots of the terminal output and key source files as required by your instructor.
