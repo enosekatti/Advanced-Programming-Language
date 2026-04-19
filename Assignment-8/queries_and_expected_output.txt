@@ -1,0 +1,97 @@
+Assignment 8 — Sample Prolog Queries and Expected Results
+===========================================================
+Load the program in SWI-Prolog (or another ISO-style Prolog):
+
+  ?- [family_tree].
+
+Notation: ";" means user presses semicolon for next answer; "." ends the query.
+
+-------------------------------------------------------------------
+1) Children of a particular person (pattern: who are Tom’s children?)
+-------------------------------------------------------------------
+Query:
+  ?- child(C, tom).
+
+Expected (order may vary):
+  C = emma ;
+  C = james.
+
+(Equivalent: ?- parent(tom, C).)
+
+-------------------------------------------------------------------
+2) Siblings of a particular person
+-------------------------------------------------------------------
+Query:
+  ?- sibling(S, emma).
+
+Expected includes:
+  S = james.
+
+Note: Prolog may list the same pair more than once if multiple shared
+parents appear in the fact base (Tom and Susan are both parents of Emma
+and James).
+
+-------------------------------------------------------------------
+3) Is one person a cousin of another?
+-------------------------------------------------------------------
+Query:
+  ?- cousin(emma, mary).
+
+Expected:
+  true.
+
+To list cousins of Mary:
+  ?- cousin(C, mary).
+
+Expected includes:
+  C = emma ;
+  C = james.
+
+-------------------------------------------------------------------
+4) Grandparent (recursive relative/3, two generations)
+-------------------------------------------------------------------
+Query:
+  ?- grandparent(G, leo).
+
+Expected (Leo’s grandparents are Emma’s parents):
+  G = tom ;
+  G = susan.
+
+Query:
+  ?- grandparent(arthur, emma).
+
+Expected:
+  true.        (Arthur -> Tom -> Emma)
+
+-------------------------------------------------------------------
+5) Recursive descendants of a person
+-------------------------------------------------------------------
+Query:
+  ?- descendant(tom, D).
+
+Expected includes (with ";" between solutions):
+  D = emma ;
+  D = james ;
+  D = leo.
+
+-------------------------------------------------------------------
+6) Ancestor (recursive, any depth)
+-------------------------------------------------------------------
+Query:
+  ?- ancestor(A, sophie).
+
+Expected includes:
+  A = mary ;
+  A = linda ;
+  A = frank ;
+  A = arthur ;
+  A = rose.
+
+-------------------------------------------------------------------
+7) Gender facts (basic inference)
+-------------------------------------------------------------------
+Query:
+  ?- female(X), parent(X, james).
+
+Expected:
+  X = susan.
